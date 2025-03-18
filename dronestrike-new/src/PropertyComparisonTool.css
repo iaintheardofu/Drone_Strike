@@ -1,0 +1,274 @@
+.property-comparison-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 24px;
+    overflow: hidden;
+  }
+  
+  .comparison-header {
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--light-grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .comparison-actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .dropdown-menu.property-menu {
+    width: 300px;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .dropdown-title {
+    padding: 12px 16px;
+    margin: 0;
+    background-color: var(--light-grey);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--dark-grey);
+    border-bottom: 1px solid #d0d7df;
+  }
+  
+  .property-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .property-category-badge {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 6px;
+    border-radius: 4px;
+    background-color: rgba(138, 162, 74, 0.1);
+    color: var(--olive-green-dark);
+    text-transform: uppercase;
+  }
+  
+  .property-item-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .property-item-name {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--dark-grey);
+  }
+  
+  .property-item-subtitle {
+    font-size: 12px;
+    color: var(--medium-grey);
+    margin-top: 2px;
+  }
+  
+  .comparison-table-container {
+    overflow-x: auto;
+  }
+  
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  .comparison-table th, .comparison-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--light-grey);
+  }
+  
+  .property-info-header {
+    width: 200px;
+    background-color: var(--light-grey);
+    font-weight: 600;
+    color: var(--dark-grey);
+    position: sticky;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .property-column {
+    min-width: 200px;
+  }
+  
+  .property-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .property-name {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--dark-grey);
+  }
+  
+  .remove-property-btn {
+    background: none;
+    border: none;
+    color: var(--medium-grey);
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+  }
+  
+  .remove-property-btn:hover {
+    background-color: var(--light-grey);
+    color: var(--dark-grey);
+  }
+  
+  .section-header {
+    background-color: rgba(224, 229, 236, 0.3);
+  }
+  
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: var(--dark-grey);
+  }
+  
+  .section-icon {
+    color: var(--deep-navy);
+  }
+  
+  .row-label {
+    font-weight: 500;
+    background-color: var(--light-grey);
+    position: sticky;
+    left: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .row-label:hover {
+    background-color: #d0d7df;
+  }
+  
+  .sortable-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .sort-icon {
+    color: var(--medium-grey);
+    opacity: 0.5;
+  }
+  
+  .sort-icon.active {
+    color: var(--deep-navy);
+    opacity: 1;
+  }
+  
+  .comparison-value {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .indicator-icon {
+    margin-left: 4px;
+  }
+  
+  .indicator-icon.best {
+    color: var(--olive-green);
+  }
+  
+  .indicator-icon.worst {
+    color: var(--alert-yellow);
+  }
+  
+  .best-value {
+    font-weight: 600;
+    color: var(--olive-green-dark);
+  }
+  
+  .worst-value {
+    color: var(--medium-grey);
+  }
+  
+  .status-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .status-badge.foreclosure {
+    background-color: rgba(243, 156, 18, 0.1);
+    color: var(--alert-yellow);
+  }
+  
+  .status-badge.no-foreclosure {
+    background-color: rgba(138, 162, 74, 0.1);
+    color: var(--olive-green-dark);
+  }
+  
+  .comparison-chart-section {
+    padding: 24px;
+  }
+  
+  .section-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--dark-grey);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .value-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .chart-bar-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .chart-bar-label {
+    width: 180px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .chart-bar-wrapper {
+    flex: 1;
+    height: 32px;
+    background-color: var(--light-grey);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .chart-bar {
+    height: 100%;
+    background-color: var(--deep-navy);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: width 0.5s ease-out;
+  }
